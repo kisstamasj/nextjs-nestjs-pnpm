@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm run --parallel dev",
+    "dev": "turbo run dev",
     "docker:up": "cd infra && docker compose up",
     "docker:up:build": "cd infra && docker compose up --build",
-    "docker:prod:up": "cd infra && docker compose -f docker-compose.prod.yaml up --build"
+    "docker:prod:up": "cd infra && docker compose -f docker-compose.prod.yaml up --build",
+    "common:build": "cd packages/common && pnpm build"
   },
   "keywords": [],
   "author": "",

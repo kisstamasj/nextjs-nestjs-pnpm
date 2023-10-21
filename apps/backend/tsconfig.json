@@ -5,7 +5,7 @@
     "declaration": true,
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
-    "target": "es2017",
+    "target": "es5",
     "sourceMap": true,
     "outDir": "./dist"
   }

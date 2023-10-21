@@ -10,10 +10,10 @@
     "strictBindCallApply": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "paths": {
-      "@backend/*": ["./apps/backend/src/*"],
-      "@client/*": ["./apps/client/*"],
-      "@common/*": ["./packages/common/*"]
-    }
+    // "paths": {
+    //   "@backend/*": ["./apps/backend/src/*"],
+    //   "@client/*": ["./apps/client/*"],
+    //   "@common/*": ["./packages/common/*"]
+    // }
   }
 }

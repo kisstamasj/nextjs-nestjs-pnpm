@@ -4,7 +4,10 @@ import { dataSourceOptions } from '../db/data-source';
 import { TestModule } from './test/test.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(dataSourceOptions), TestModule],
+  imports: [
+    // TypeOrmModule.forRoot(dataSourceOptions),
+    TestModule,
+  ],
   controllers: [],
   providers: [],
 })
