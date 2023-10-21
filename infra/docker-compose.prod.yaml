@@ -1,0 +1,52 @@
+version: "3"
+
+services:
+
+  # NestJS backend
+  backend:
+    build:
+      context: ../
+      dockerfile: infra/Dockerfile
+      target: backend-${ENV_TYPE}
+    ports:
+      - ${BACKEND_EXTERNAL_PORT}:${BACKEND_INTERNAL_PORT}
+    env_file:
+      - ./.env
+    networks:
+      - backend_network
+    depends_on:
+      - database
+    
+   # NextJS client
+  client:
+    build:
+      context: ../
+      dockerfile: infra/Dockerfile
+      target: client-${ENV_TYPE}
+    ports:
+      - ${CLIENT_EXTERNAL_PORT}:${CLIENT_INTERNAL_PORT}
+    env_file:
+      - ./.env
+    networks:
+      - backend_network
+    depends_on:
+      - backend
+
+  # PostgreSQL Database
+  database:
+    image: postgres
+    ports:
+      - 5434:5432
+    env_file:
+      - ./.env
+    networks:
+      - backend_network
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+networks:
+  backend_network:
+    driver: bridge
+
+volumes:
+  postgres:
