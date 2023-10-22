@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "tsconfig": "workspace:^"
   }
 }

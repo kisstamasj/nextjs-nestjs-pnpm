@@ -161,6 +161,10 @@ importers:
         version: 5.2.2
 
   packages/common:
+    dependencies:
+      tsconfig:
+        specifier: workspace:^
+        version: link:../tsconfig
     devDependencies:
       typescript:
         specifier: ^5.0.2
