@@ -2,7 +2,7 @@
   "extends": "../../tsconfig.base.json", // Extend the config options from the root
   "compilerOptions": {
     "module": "commonjs",
-    "rootDir": "./src",
+    "rootDir": ".",
     "declaration": true,
     "removeComments": true,
     "allowSyntheticDefaultImports": true,

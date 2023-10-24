@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm run --parallel dev",
-    "docker:up": "cd infra && docker compose up",
-    "docker:up:build": "cd infra && docker compose up --build",
+    "docker:dev:up": "cd infra && docker compose up",
+    "docker:dev:up:build": "cd infra && docker compose up --build",
     "docker:prod:up": "cd infra && docker compose -f docker-compose.prod.yaml up --build"
   },
   "keywords": [],

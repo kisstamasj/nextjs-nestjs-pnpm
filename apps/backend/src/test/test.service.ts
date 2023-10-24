@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateTestDto } from './dto/create-test.dto';
 import { UpdateTestDto } from './dto/update-test.dto';
+import {sayHello} from '@common'
 
 @Injectable()
 export class TestService {
@@ -9,7 +10,7 @@ export class TestService {
   }
 
   findAll() {
-    return `This action returns all test`;
+    return sayHello('Tomika');
   }
 
   findOne(id: number) {

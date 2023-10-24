@@ -1,8 +1,7 @@
 import { DataSource, DataSourceOptions } from 'typeorm';
 import 'dotenv/config';
-import { join } from 'path';
 
-const migrations = ['db/migrations/*.ts'];
+const migrations = ['dist/apps/backend/db/migrations/*.js'];
 
 let dbOptions: DataSourceOptions;
 
@@ -18,8 +17,8 @@ switch (process.env.ENV_TYPE) {
       port: parseInt(process.env.POSTGRES_INTERNAL_PORT || ''),
       username: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
-      // entities: ['**/*.entity.js'],
-    //   migrations,
+      entities: ['**/*.entity.js'],
+      migrations,
     };
     break;
 
@@ -57,10 +56,9 @@ switch (process.env.ENV_TYPE) {
       port: parseInt(process.env.POSTGRES_INTERNAL_PORT || ''),
       username: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
-      // entities: [join(__dirname, '**', '*.entity.{ts,js}')]
-      // migrations,
-      // migrationsRun: true,
-      // entities: ['**/*.entity.js'],
+      migrations,
+      migrationsRun: true,
+      entities: ['**/*.entity.js'],
     };
     break;
   default:

@@ -13,7 +13,7 @@
     "paths": {
       "@backend/*": ["./apps/backend/src/*"],
       "@client/*": ["./apps/client/*"],
-      "@common/*": ["./packages/common/*"]
+      "@common": ["./packages/common/index"]
     }
   }
 }
