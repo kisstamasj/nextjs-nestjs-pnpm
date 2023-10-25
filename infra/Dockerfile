@@ -1,4 +1,4 @@
-FROM node:18-alpine AS base
+FROM node:lts AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 ARG BACKEND_API_INTERNAL_PORT

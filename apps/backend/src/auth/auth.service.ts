@@ -8,8 +8,8 @@ import { JwtService } from '@nestjs/jwt';
 import { Password } from '@nestjs-common/utils';
 import { ConfigService } from '@nestjs/config';
 import { AuthDto } from './dtos/auth.dto';
-import { CreateUserDto } from '@backend/users/dtos/create-user.dto';
-import { User } from '@backend/users/entities/user.entity';
+import { CreateUserDto } from '../users/dtos/create-user.dto';
+import { User } from '../users/entities/user.entity';
 
 export interface Tokens {
   accessToken: string;
