@@ -8,11 +8,6 @@
     "sourceMap": true,
     "outDir": "./dist",
     "strictNullChecks": false
-  },
-  "include": [
-    "./db",
-    "./src",
-    "../../packages"
-  ]
+  }
 }
 
