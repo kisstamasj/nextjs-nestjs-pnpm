@@ -1,7 +1,7 @@
 {
   "name": "common",
-  "main": "index.ts",
-  "types": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.js",
   "scripts": {
     "build": "tsc --build",
     "dev": "tsc --watch --preserveWatchOutput"

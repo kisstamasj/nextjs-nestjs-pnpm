@@ -43,18 +43,12 @@ importers:
       class-validator:
         specifier: ^0.14.0
         version: 0.14.0
-      common:
-        specifier: workspace:^
-        version: link:../../packages/common
       dotenv:
         specifier: ^16.3.1
         version: 16.3.1
       dotenv-cli:
         specifier: ^7.3.0
         version: 7.3.0
-      nestjs-common:
-        specifier: workspace:^
-        version: link:../../packages/nestjs-common
       passport:
         specifier: ^0.6.0
         version: 0.6.0
@@ -140,9 +134,6 @@ importers:
 
   apps/client:
     dependencies:
-      common:
-        specifier: workspace:^
-        version: link:../../packages/common
       next:
         specifier: 13.5.6
         version: 13.5.6(react-dom@18.2.0)(react@18.2.0)

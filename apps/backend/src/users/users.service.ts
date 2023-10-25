@@ -7,7 +7,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { User } from './entities/user.entity';
 import { Repository } from 'typeorm';
 import { CreateUserDto } from './dtos/create-user.dto';
-import { Password } from 'nestjs-common';
+import { Password } from '@nestjs-common/utils';
 
 /**
  * The `UserService` class is responsible for handling user-related operations such as creating a new user, finding a user by their ID or email, updating a user's information, and deleting a user.

@@ -15,7 +15,7 @@ import { UserDto } from './dtos/user.dto';
 import { Request as ExpressRequest } from 'express';
 import { AccessTokenGuard, Serialize } from 'nestjs-common';
 import { UpdateUserDto } from './dtos/update-user.dto';
-import { sayHello } from 'common';
+import { sayHello } from '@common/index';
 
 /**
  * The UserController class handles HTTP requests related to user operations.

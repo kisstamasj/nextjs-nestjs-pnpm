@@ -12,7 +12,9 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@backend/*": ["./apps/backend/src/*"],
-      "@client/*": ["./apps/client/*"]
+      "@client/*": ["./apps/client/*"],
+      "@nestjs-common/*": ["./packages/nestjs-common/*"],
+      "@common/*": ["./packages/common/*"]
     }
   }
 }
