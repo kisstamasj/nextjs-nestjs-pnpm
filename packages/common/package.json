@@ -3,7 +3,8 @@
   "main": "index.ts",
   "types": "index.ts",
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "dev": "tsc --watch --preserveWatchOutput"
   },
   "devDependencies": {
     "typescript": "^5.0.2"

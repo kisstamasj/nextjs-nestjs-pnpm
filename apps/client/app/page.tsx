@@ -1,4 +1,4 @@
-import { sayHello } from "@common";
+import { sayHello } from "common";
 
 export default function Home() {
   return (
