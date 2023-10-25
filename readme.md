@@ -15,8 +15,9 @@
 - **docker build:** ```docker build -f infra/Dockerfile -t kisstamas/backend:1.0 --target backend-dev .```
 - **docker push**: ```docker push kisstamas/backend:1.0```
 
-# Install workspace packages
-- `pnpm add tsconfig@workspace --filter backend`
+# Setup workspace packages
+- create folder into packages folder
+- add to root tsconfig.base.json file paths attribute
 
 # Authentication
 
