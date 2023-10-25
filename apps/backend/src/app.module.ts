@@ -32,7 +32,7 @@ import { APP_PIPE } from '@nestjs/core';
           return new BadRequestException(result);
         },
       }),
-    }
+    },
   ],
 })
 export class AppModule {}

@@ -20,6 +20,7 @@ RUN pnpm run -r build
 
 FROM base AS common-dev
 COPY --from=dev-deps /app/node_modules/ /app/node_modules
+COPY --from=dev-deps /app/packages /app/packages
 
 FROM base AS common-prod
 COPY --from=prod-deps /app/node_modules/ /app/node_modules

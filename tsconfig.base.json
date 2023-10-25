@@ -16,11 +16,5 @@
       "@nestjs-common/*": ["./packages/nestjs-common/*"],
       "@common/*": ["./packages/common/*"]
     }
-  },
-  // "references": [
-  //   {"path": "./apps/backend"},
-  //   {"path": "./apps/client"},
-  //   {"path": "./packages/nestjs-common"},
-  //   {"path": "./packages/common"}
-  // ]
+  }
 }

@@ -1,7 +1,6 @@
 version: "3"
 
 services:
-
   # NestJS backend
   backend:
     build:
@@ -19,8 +18,8 @@ services:
       - backend_network
     depends_on:
       - database
-    
-   # NextJS client
+
+    # NextJS client
   client:
     build:
       context: ../
