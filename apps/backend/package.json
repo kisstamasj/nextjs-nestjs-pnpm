@@ -46,11 +46,6 @@
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.17"
   },
-  "dependenciesMeta": {
-    "nestjs-common": {
-      "injected": true
-    }
-  },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
