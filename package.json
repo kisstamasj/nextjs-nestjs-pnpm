@@ -13,7 +13,8 @@
     "backend:migration:run": "cd apps/backend && pnpm migration:run",
     "backend:migration:generate": "cd apps/backend && pnpm migration:generate",
     "backend:migration:create": "cd apps/backend && pnpm migration:create",
-    "backend:migration:revert": "cd apps/backend && pnpm migration:revert"
+    "backend:migration:revert": "cd apps/backend && pnpm migration:revert",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -22,15 +23,11 @@
     "@types/bcrypt": "^5.0.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "husky": "^8.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pnpm format && git add -A ."
-    }
   }
 }

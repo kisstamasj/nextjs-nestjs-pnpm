@@ -226,31 +226,6 @@ importers:
         specifier: ^5.0.2
         version: 5.2.2
 
-  packages/nestjs-common:
-    dependencies:
-      '@nestjs/common':
-        specifier: ^10.0.0
-        version: 10.2.7(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/passport':
-        specifier: ^10.0.2
-        version: 10.0.2(@nestjs/common@10.2.7)(passport@0.6.0)
-      bcrypt:
-        specifier: ^5.1.1
-        version: 5.1.1
-      class-transformer:
-        specifier: ^0.5.1
-        version: 0.5.1
-      rxjs:
-        specifier: ^7.8.1
-        version: 7.8.1
-    devDependencies:
-      '@types/bcrypt':
-        specifier: ^5.0.1
-        version: 5.0.1
-      typescript:
-        specifier: ^5.0.2
-        version: 5.2.2
-
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:
