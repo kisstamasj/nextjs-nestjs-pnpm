@@ -108,3 +108,8 @@ and refreshToken
 <td>{accessToken, refreshToken}</td>
 </tr>
 </table>
+
+# Auto formatting with prettier and husky
+
+- prettier format runs before every commit
+- hooks inside the .husky folder
