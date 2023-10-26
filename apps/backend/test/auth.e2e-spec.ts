@@ -128,7 +128,7 @@ describe('Auth module (e2e)', () => {
     // signin the user with wrong email address
     const signinRes = await signIn(app, credentials);
 
-    const {id, email, name, tokens} = signinRes.body
+    const { id, email, name, tokens } = signinRes.body;
 
     await request(app.getHttpServer())
       .get('/auth/logout')
