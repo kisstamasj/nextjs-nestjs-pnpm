@@ -30,7 +30,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pnpm format"
+      "pre-commit": "pnpm format && git add -A ."
     }
   }
 }
