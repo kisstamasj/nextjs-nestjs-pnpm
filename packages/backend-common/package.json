@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-common",
+  "name": "backend-common",
   "main": "index.ts",
   "types": "index.ts",
   "scripts": {

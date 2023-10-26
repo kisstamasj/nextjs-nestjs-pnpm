@@ -6,11 +6,17 @@
   "scripts": {
     "dev": "pnpm run --parallel dev",
     "build": "pnpm run --parallel build",
-    "docker:dev:up": "cd infra && docker compose up",
-    "docker:dev:up:build": "cd infra && docker compose up --build",
+    "docker:dev:up": "cd infra && docker compose -f docker-compose.dev.yaml up",
+    "docker:dev:up:build": "cd infra && docker compose -f docker-compose.dev.yaml up --build",
     "docker:prod:up": "cd infra && docker compose -f docker-compose.prod.yaml up --build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  }
 }

@@ -13,8 +13,8 @@ import { UsersService } from './users.service';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UserDto } from './dtos/user.dto';
 import { Request as ExpressRequest } from 'express';
-import { AccessTokenGuard } from '@nestjs-common/guards';
-import { Serialize } from '@nestjs-common/interceptors';
+import { AccessTokenGuard } from '@backend-common/guards';
+import { Serialize } from '@backend-common/interceptors';
 import { UpdateUserDto } from './dtos/update-user.dto';
 import { sayHello } from '@common/index';
 

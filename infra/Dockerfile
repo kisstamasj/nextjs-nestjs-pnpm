@@ -32,6 +32,8 @@ EXPOSE $BACKEND_INTERNAL_PORT
 CMD pnpm dev
 
 FROM common-prod AS backend-prod
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 backend
 COPY --from=prod-deps /app/apps/backend/node_modules/ /app/apps/backend/node_modules
 COPY --from=build /app/apps/backend/dist/ /app/apps/backend/dist
 WORKDIR /app/apps/backend
@@ -41,12 +43,16 @@ CMD pnpm start:prod
 FROM common-dev AS client-dev
 COPY --from=dev-deps /app/apps/client/node_modules/ /app/apps/client/node_modules
 WORKDIR /app/apps/client
+ENV NEXT_TELEMETRY_DISABLED 1
 EXPOSE $CLIENT_INTERNAL_PORT
 CMD pnpm dev
 
 FROM common-prod AS client-prod
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 client
 COPY --from=prod-deps /app/apps/client/node_modules/ /app/apps/client/node_modules
 COPY --from=build /app/apps/client/.next/ /app/apps/client/.next
 WORKDIR /app/apps/client
+ENV NEXT_TELEMETRY_DISABLED 1
 EXPOSE $CLIENT_INTERNAL_PORT
 CMD pnpm start

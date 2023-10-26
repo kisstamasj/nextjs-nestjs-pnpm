@@ -11,9 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@backend/*": ["./apps/backend/src/*"],
-      "@client/*": ["./apps/client/*"],
-      "@nestjs-common/*": ["./packages/nestjs-common/*"],
+      "@backend-common/*": ["./packages/backend-common/*"],
       "@common/*": ["./packages/common/*"]
     }
   }
