@@ -2,7 +2,8 @@
   "name": "common",
   "scripts": {
     "build": "tsc --build",
-    "dev": "tsc --watch --preserveWatchOutput"
+    "dev": "tsc --watch --preserveWatchOutput",
+    "format": "prettier --write \"**/*.ts\""
   },
   "devDependencies": {
     "typescript": "^5.0.2"
