@@ -9,7 +9,7 @@ import { APP_PIPE } from '@nestjs/core';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true,
+      isGlobal: true
     }),
     TypeOrmModule.forRoot(dataSourceOptions),
     AuthModule,
