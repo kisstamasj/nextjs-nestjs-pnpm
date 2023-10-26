@@ -2,7 +2,7 @@
 - `pnpm install`
 - `cp infra/.env.example infra/.env`
 - `pnpm docker:dev:up`
-- `cd apps/backend && pnpm migration:run`
+- `pnpm backend:migration:run`
 
 ## Development environment
 - infra/.env -> ENV_TYPE=dev
