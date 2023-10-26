@@ -5,5 +5,11 @@
   "testRegex": ".e2e-spec.ts$",
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "setupFilesAfterEnv": ["<rootDir>/setup.ts"],
+  "moduleNameMapper": {
+    "@backend-common/(.*)": "<rootDir>/../../../packages/backend-common/$1",
+    "@backend-common": "<rootDir>/../../../packages/backend-common/",
+    "@common/(.*)": "<rootDir>/../../../packages/common/$1"
   }
 }
